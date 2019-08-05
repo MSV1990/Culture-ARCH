@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NoSSR from 'react-no-ssr';
+
 import AwesomeSlider from 'react-awesome-slider';
 
 import idGenerator from 'react-id-generator';
@@ -17,9 +19,11 @@ const gallery = ({ work }) => {
     </div>
   ));
   return (
-    <AwesomeSlider cssModule={AwsSliderStyles} className={style.Container}>
-      {worksImg}
-    </AwesomeSlider>
+    <NoSSR>
+      <AwesomeSlider cssModule={AwsSliderStyles} className={style.Container}>
+        {worksImg}
+      </AwesomeSlider>
+    </NoSSR>
   );
 };
 export default gallery;
