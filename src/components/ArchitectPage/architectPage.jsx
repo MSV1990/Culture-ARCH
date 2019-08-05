@@ -10,6 +10,7 @@ import Video from './Video/Video';
 import Gallery from './Gallery/Gallery';
 
 import style from './style.module.css';
+import SimpleMap from './Map/Map';
 
 class Architect extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class Architect extends Component {
           <Timeline timelineData={timelineData} />
           <Activity work={work} />
           <Video videoId={videoId} />
-          
+          <SimpleMap work={work} />
           <Gallery work={work} />
         </div>
       </Layout>
