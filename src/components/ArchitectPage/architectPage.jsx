@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../Layout/Layout';
 
 import Activity from './Activity/Activity';
-import Map from './Map/Map';
+
 import Person from './Person/Person';
 import Timeline from './Timeline/Timeline';
 import Video from './Video/Video';
@@ -39,7 +39,7 @@ class Architect extends Component {
           <Timeline timelineData={timelineData} />
           <Activity work={work} />
           <Video videoId={videoId} />
-          <Map work={work} />
+          
           <Gallery work={work} />
         </div>
       </Layout>
