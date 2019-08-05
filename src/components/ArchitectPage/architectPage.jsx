@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
+import NoSSR from 'react-no-ssr';
+
 import Layout from '../Layout/Layout';
 
 import Activity from './Activity/Activity';
+import Gallery from './Gallery/Gallery';
 import Map from './Map/Map';
 import Person from './Person/Person';
 import Timeline from './Timeline/Timeline';
@@ -38,7 +41,12 @@ class Architect extends Component {
           <Timeline timelineData={timelineData} />
           <Activity work={work} />
           <Video videoId={videoId} />
-          <Map work={work} />
+          <NoSSR>
+            <Map work={work} />
+          </NoSSR>
+          <NoSSR>
+            <Gallery work={work} />
+          </NoSSR>
         </div>
       </Layout>
     );
