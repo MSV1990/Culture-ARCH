@@ -43,6 +43,7 @@ cultureportalteam31architects.netlify.com
 | ------------| ----- |
 | 2h  | gallery slider   |
 | 1h  | gallery styles |
+| 1h  | Netlify app|
 
 
 Points - **240/240**
